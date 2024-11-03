@@ -6,6 +6,6 @@ res = 0
 for value in student_dict.values():
     res += value
 
-res = res/len(student_dict)
+res = res / len(student_dict)
 print("The average grade is: " + str(res))
 print("\n")
