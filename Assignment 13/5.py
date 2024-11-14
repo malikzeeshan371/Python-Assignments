@@ -6,10 +6,16 @@
 def overall_average(student):
     total_sum = 0
     total_count = 0
-    for grades in student['grades'].values():
+    
+    
+    for subject,grades in student['grades'].items():
+     for grade in grades:
+
+     
        
-         total_sum = total_sum + sum(grades)
-         total_count = total_count + len(grades)
+      total_sum += grade
+      total_count += 1
+         
 
     return total_sum/total_count
    
