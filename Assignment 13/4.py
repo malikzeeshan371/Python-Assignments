@@ -6,14 +6,19 @@
 #        student_average(student, 'Math')
 # Output: 80.0
 def student_average(student , subject):
+    total_sum = 0
+    #total_count = 0
     grades = student['grades'][subject]
-    for students  in student.items():
-        for grade in grades:
-            total_sum = sum(grades)
-            return total_sum/len(grades)
+    for grade in grades:
+            total_sum += grade
+            
+    
+    return total_sum/len(grades)
+        
+    
 
 
-student = {'name': 'Alice', 'grades': {'Math': [90, 80, 70], 'Science': [100, 90]}}
+student = {'name': 'Alice', 'grades': {'Math': [90, 80,70], 'Science': [100,90]}}
 average = student_average(student , 'Math')
 print( "Average of subject Math is : " , average)
 print("\n")
