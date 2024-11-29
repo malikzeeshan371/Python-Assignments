@@ -6,10 +6,8 @@
 # Output: 'Game Championship has 1 team.'
 
 def game_summary(game):
-    for key in game.values():
-        len(key)
-        print(key)
-    return " "
-
+    game_name = game['game_name']
+    number_of_teams = len(game['teams'])
+    return f"Game{game_name} has {number_of_teams} team"
 input_1 = {'game_name': 'Championship', 'teams': {'TeamA': ['Alice', 'Bob']}}
 print(game_summary(input_1))
