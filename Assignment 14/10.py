@@ -6,23 +6,17 @@
 
 def team_with_most_players(game):
     number_of_teams = game['teams']
-    print(number_of_teams)
+    # print(number_of_teams)
     # keymax = max(number_of_teams.values())
     
     # return name_of_team
-    
-    for most_players in number_of_teams.values():
-      
-        size = len(most_players)
-        print(size)
-    if number_of_teams['TeamA'] > number_of_teams['TeamB']:
-            max_team = print('TeamA')
-    else:
-            max_team = print('TeamB')
-  
+    max_team = ''
+    max_count = 0
+    for teams, team_players in number_of_teams.items():
+      if len(team_players) >max_count:
+         max_team = teams
+         max_count = len(team_players)
     return max_team
-        
-     
     
 
 
