@@ -8,7 +8,7 @@
 # Output: {'game_name': 'Championship', 'teams': {'TeamA': ['Alice', 'Bob'], 'TeamB': ['Charlie', 'Dave']}}
 
 def add_team_to_game(game , team):
-    game.update(team)
+    game['teams'].update(team)
     return game
 
 game= {'game_name': 'Championship', 'teams': {'TeamA': ['Alice', 'Bob']}}
