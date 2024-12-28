@@ -10,10 +10,10 @@ def count_words_in_file(filename):
     file = open(filename , 'r')
     contents =  file.read()
     lines = contents.split()
+    file.close()
 
     number_of_words += len(lines)
     return number_of_words
-    file.close()
 input = count_words_in_file('Assignment 15/wordcount.txt')
 print(input)
 
