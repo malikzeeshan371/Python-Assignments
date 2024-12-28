@@ -13,5 +13,5 @@ def write_message_to_file(filename , message):
     
 
 
-input = write_message_to_file('Assignment 15/message.txt' , 'Hello World')
-print(input)
+message_to_file = write_message_to_file('Assignment 15/message.txt' , 'Hello World')
+print(message_to_file)
