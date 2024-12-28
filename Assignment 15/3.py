@@ -7,7 +7,8 @@
 
 def append_message_to_file(filename , message):
     with open(filename , 'a') as file:
-        contents = file.write(message)
+        file.write(message)
+
 
     print ('this is to append the' , filename , 'with new message')
 
