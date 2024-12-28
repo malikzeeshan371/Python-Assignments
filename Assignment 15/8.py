@@ -6,15 +6,19 @@
 # (Content of 'example.txt' after -> 'This new house.')
 
 def find_and_replace_in_file(filename ,target_word, replacement_word):
-    target_data = target_word
-    replaced_word = replacement_word
+    # target_data = target_word
+    # replaced_word = replacement_word
 
     with open(filename , 'r') as file:
         data = file.read()
-        data = data.replace(target_data , replaced_word)
+        data = data.replace(target_word , replacement_word)
+
+        file.close()
 
     with open(filename , 'w') as file:
         file.write(data)
+
+        file.close()
     print('replaced')
     
 find_and_replace_in_file('Assignment 15/findandreplacefile.txt', 'new', 'my')
