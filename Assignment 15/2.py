@@ -10,5 +10,5 @@ def read_message_from_file(filename):
        contents =  file.read()
     print(contents)
 
-Input = read_message_from_file('Assignment 15/message.txt')
-print(input)
+file_line = read_message_from_file('Assignment 15/message.txt')
+print(file_line)
