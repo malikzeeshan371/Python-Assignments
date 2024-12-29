@@ -6,10 +6,17 @@
 # Output: ['Line 1', 'Line 2', 'Line 3']
 
 def read_lines_from_file(filename):
+    # new_ouput = []
     file = open(filename , 'r')
-    content = file.read()
-    print(content)
+    content = file.readlines()
+
     
+  
     file.close()
 
-read_lines_from_file('lines1.txt')
+    return [line.strip() for line in content]
+
+
+
+read_from_file = read_lines_from_file('lines1.txt')
+print(read_from_file)
