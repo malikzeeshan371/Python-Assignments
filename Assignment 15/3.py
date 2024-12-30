@@ -8,11 +8,11 @@
 def append_message_to_file(filename , message):
     with open(filename , 'a') as file:
         file.write(message)
-
+        file.close()
 
     print ('this is to append the' , filename , 'with new message')
 
 
 
-Input =  append_message_to_file('Assignment 15/message.txt', ' Goodbye!')
-print(input)
+append_message_to_file('Assignment 15/message.txt', ' Goodbye!')
+
