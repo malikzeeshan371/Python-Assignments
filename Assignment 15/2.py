@@ -8,7 +8,7 @@
 def read_message_from_file(filename):
     with open(filename , 'r') as file:
        contents =  file.read()
+    file.close()
     print(contents)
 
-file_line = read_message_from_file('Assignment 15/message.txt')
-print(file_line)
+read_message_from_file('Assignment 15/message.txt')
